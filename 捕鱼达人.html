@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #000;
+	text-align: center;
+	padding-top: 100px;
+}
+body,html{
+	overflow: hidden;
+}
+canvas{
+	background: url(img/bg.jpg);
+}
+span{
+	position: absolute;
+	display: block;
+	background: green;
+	cursor: pointer;
+	top: 650px;
+	width: 20px;
+	height: 20px;
+	font-size:20px;
+	line-height: 20px;
+}
+#left{
+	left: 680px;
+}
+#right{
+	left: 800px;
+}
+p{
+	color: #fff;
+}
+</style>
+<script src="common.js"></script>
+<script src="cannon.js"></script>
+<script src="fish.js"></script>
+<script src="diefish.js"></script>
+<script src="bullet.js"></script>
+<script src="web.js"></script>
+<script src="coin.js"></script>
+<script src="score.js"></script>
+<script src="init.js"></script>
+<body>
+<canvas width=800 height=600 id="can"></canvas>
+<span id="left">-</span>
+<span id="right">+</span>
+<p >得分<b id="score">0</b></p>
+</body>
+</html>
